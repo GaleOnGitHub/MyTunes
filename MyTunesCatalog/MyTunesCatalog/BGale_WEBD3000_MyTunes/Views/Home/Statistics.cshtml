@@ -1,0 +1,68 @@
+﻿@model BGale_WEBD3000_MyTunes.ViewModels.AlbumStatistics
+@{
+    ViewBag.Title = "Statistics";
+}
+
+<h2>Statistics</h2>
+
+<div>
+    <dl class="dl-horizontal">
+
+        <dt>
+            @Html.DisplayNameFor(model => model.numberOfTracks)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.numberOfTracks)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.numberOfArtists)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.numberOfArtists)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.numberOfAlbums)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.numberOfAlbums)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.longestTrack)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.longestTrack.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.largestTrack)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.largestTrack.Name)
+        </dd>
+        <dt>
+            Most tracks
+        </dt>
+        <dd><br /></dd>
+        <dd>
+            <table class="table">
+                <tr>
+                    <th>Artist</th>
+                    <th>Tracks</th>
+                </tr>
+                @foreach (var item in Model.artistsMostTracks)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Name)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(model => model.maxTracks)
+                        </td>
+                    </tr>
+                }
+            </table>
+        </dd>
+    </dl>
+
+
+</div>
+
