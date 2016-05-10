@@ -12,8 +12,8 @@ Three applications built with a modified version of the Chinook Database.
 <strong>MyTunes Catalog</strong>
 ![ScreenShot](/screenshots/catelog-albums.png)
 <br><br>
-<strong>MyTunes Store</strong>
-![ScreenShot](/screenshots/store-tracks.png)
+<strong>Knockout Client</strong>
+![ScreenShot](/screenshots/knockout-client.png)
 
 See each application for more screenshots and information.
 <br><br>
